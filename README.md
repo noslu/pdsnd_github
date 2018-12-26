@@ -15,14 +15,14 @@ This program (bikeshare.py) uses three data files - one for each city.
 
 #### Scrubbing data
  - [Get month name from number](https://stackoverflow.com/questions/6557553/get-month-name-from-number/6557568)
-
  - [datetime](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html)
 
-
+#### Python functions
  - [while loops](https://wiki.python.org/moin/WhileLoop)
  - [More while loop resources](http://introtopython.org/while_input.html)
  - [break statement](https://www.programiz.com/python-programming/break-continue)
- - [Generally the api reference](https://pandas.pydata.org/pandas-docs/stable/api.html#datetimelike-properties)
+ - [The general API reference](https://pandas.pydata.org/pandas-docs/stable/api.html#datetimelike-properties)
 
-[Refining my user input code] https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response
-[Exiting the program] https://stackoverflow.com/questions/949504/terminating-a-python-program
+#### User input troubleshooting
+ - [Refining my user input code](https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response)
+ - [Exiting the program](https://stackoverflow.com/questions/949504/terminating-a-python-program)
