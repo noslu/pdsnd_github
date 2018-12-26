@@ -23,7 +23,7 @@ def get_filters():
     # Get user input for city
 
     while True:
-        city = input("\nWould you like to see data for Chicago, New York City, or Washington? \n").lower()
+        city = input("\nWould you like to see data for Chicago, New York City, or Washington? \n")
         if city.title() not in ('Chicago', 'New York City', 'Washington'):
             print("Sorry, I did not understand your answer.")
         else:
@@ -34,7 +34,7 @@ def get_filters():
     # Get user input for month
 
     while True:
-        month = input("\nWhich month would you like to see data for? January, February, March, April, May, June, or all months? \n").lower()
+        month = input("\nWhich month would you like to see data for? January, February, March, April, May, June, or all months? \n")
         if month.title() not in ('January', 'February', 'March', 'April', 'May', 'June', 'All'):
             print("Sorry, I did not understand you.")
         else:
@@ -43,14 +43,14 @@ def get_filters():
 
     # Get user input for day of week
     while True:
-        day = input("\nWhich day of the week would you like to see data for? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or all days? \n").lower()
+        day = input("\nWhich day of the week would you like to see data for? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or all days? \n")
         if day.title() not in ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'All'):
             print("Sorry, I did not understand you.")
         else:
             print("Ok, {} it is. Let's take a look at the data.".format(day.title()))
             break
 
-    print('-'*40)
+    print('-'*30)
     return city, month, day
 
 
@@ -125,7 +125,7 @@ def time_stats(df):
     print("Most common start hour: ", popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def station_stats(df):
@@ -151,7 +151,7 @@ def station_stats(df):
     print("Most frequent combination of stations to start and end a trip: ", popular_station_combo)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def trip_duration_stats(df):
@@ -169,7 +169,7 @@ def trip_duration_stats(df):
     print("Mean travel time: {} minutes.".format(mean_travel_time/60))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def user_stats(df):
@@ -195,13 +195,13 @@ def user_stats(df):
         print('There is no Gender data for this dataset.')
 
 
-    # Display earliest, most recent, and most common year of birth
+    # Display oldest user, youngest user, and most common year of birth
     if df.columns.isin(['Birth Year']).any():
-        earliest_birth_year = df['Birth Year'].min()
-        print("The oldest subscriber of the bikeshare service was born in {}.".format(earliest_birth_year))
+        oldest_user = df['Birth Year'].min()
+        print("The oldest subscriber of the bikeshare service was born in {}.".format(oldest_user))
 
-        most_recent_birth_year = df['Birth Year'].max()
-        print("The youngest subscriber of the bikeshare service was born in {}.".format(most_recent_birth_year))
+        youngest_user = df['Birth Year'].max()
+        print("The youngest subscriber of the bikeshare service was born in {}.".format(youngest_user))
 
         common_birth_year = df['Birth Year'].mode()[0]
         print("The most common birth year of the bikeshare's subscribers is {}.".format(common_birth_year))
@@ -209,7 +209,7 @@ def user_stats(df):
         print('There is no Birth Year data for this dataset.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def main():
