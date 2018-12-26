@@ -1,0 +1,4 @@
+# ignore these data files so they don't take up a lot of space on the remote repo
+*.csv
+
+# this ignores chicago.csv, new_york_city.csv, and washington.csv
