@@ -50,7 +50,7 @@ def get_filters():
             print("Ok, {} it is. Let's take a look at the data.".format(day.title()))
             break
 
-    print('-'*40)
+    print('-'*30)
     return city, month, day
 
 
@@ -125,7 +125,7 @@ def time_stats(df):
     print("Most common start hour: ", popular_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def station_stats(df):
@@ -151,7 +151,7 @@ def station_stats(df):
     print("Most frequent combination of stations to start and end a trip: ", popular_station_combo)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def trip_duration_stats(df):
@@ -169,7 +169,7 @@ def trip_duration_stats(df):
     print("Mean travel time: {} minutes.".format(mean_travel_time/60))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def user_stats(df):
@@ -209,7 +209,7 @@ def user_stats(df):
         print('There is no Birth Year data for this dataset.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*30)
 
 
 def main():
