@@ -195,13 +195,13 @@ def user_stats(df):
         print('There is no Gender data for this dataset.')
 
 
-    # Display earliest, most recent, and most common year of birth
+    # Display oldest user, youngest user, and most common year of birth
     if df.columns.isin(['Birth Year']).any():
-        earliest_birth_year = df['Birth Year'].min()
-        print("The oldest subscriber of the bikeshare service was born in {}.".format(earliest_birth_year))
+        oldest_user = df['Birth Year'].min()
+        print("The oldest subscriber of the bikeshare service was born in {}.".format(oldest_user))
 
-        most_recent_birth_year = df['Birth Year'].max()
-        print("The youngest subscriber of the bikeshare service was born in {}.".format(most_recent_birth_year))
+        youngest_user = df['Birth Year'].max()
+        print("The youngest subscriber of the bikeshare service was born in {}.".format(youngest_user))
 
         common_birth_year = df['Birth Year'].mode()[0]
         print("The most common birth year of the bikeshare's subscribers is {}.".format(common_birth_year))
