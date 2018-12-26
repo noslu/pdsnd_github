@@ -1,6 +1,6 @@
 ### US City Bikeshare Exploration
 
-### This project was created over the 2018 Christmas holiday
+##### This project was created over the 2018 Christmas holiday
 
 ### The purpose of the program and how it works
 This program allows a user to review bikeshare data for one of three US cities. It allows the user to select a city, and then filter a city's data by month and day of week. Once desired filters are applied, the program then calculates  a series of statistics about the frequent times to travel, popular stations, trips and users. The program displays all of these statistics and then allows the user to view raw data if desired. If not, the program allows the user to start over or exit the program.
