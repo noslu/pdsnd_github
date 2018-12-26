@@ -77,14 +77,14 @@ def load_data(city, month, day):
 
 # Filter by month if applicable
     if month != 'all':
-    # use the index of the months list to get the correspondeing int
+    # Use the index of the months list to get the corresponding int
         months = ['january', 'february', 'march', 'april', 'may','june']
         month = months.index(month) + 1
     # Filter by month to create the new dataframe
         df = df[df['month'] == month]
 # Filter by day of week if applicable
     if day != 'all':
-    # filter by day of week to create a new dataframe
+    # Filter by day of week to create a new dataframe
         df = df[df['day_of_week'] == day.title()]
 
 
@@ -100,7 +100,7 @@ def time_stats(df):
     # Display the most common month
     # Convert the Start TIme column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
-    # extract month from Start Time column and create new column
+    # Extract month from Start Time column and create new column
     df['month'] = df['Start Time'].dt.month
     popular_month = df['month'].mode()[0]
     print("Most common month: ", calendar.month_name[popular_month])
@@ -110,7 +110,7 @@ def time_stats(df):
 
     # Extract day of week from Start Time column and create new column
     df['day_of_week'] = df['Start Time'].dt.weekday_name
-    # find most common day of week
+    # Find most common day of week
     popular_day_of_week = df['day_of_week'].mode()[0]
 
     print("Most common day of week: ", popular_day_of_week)
@@ -119,7 +119,7 @@ def time_stats(df):
 
     # Extract hour from Start Time column to create an hour column
     df['hour'] = df['Start Time'].dt.hour
-    # find most common hour (from 0 to 23)
+    # Find most common hour (from 0 to 23)
     popular_hour = df['hour'].mode()[0]
 
     print("Most common start hour: ", popular_hour)
@@ -179,7 +179,7 @@ def user_stats(df):
     start_time = time.time()
 
 
-    # Display counts of user types
+    # Display count of user types
     if df.columns.isin(['User Type']).any():
         user_types = df['User Type'].value_counts()
         print(user_types)
@@ -187,7 +187,7 @@ def user_stats(df):
         print('There is no User Type data for this dataset.')
 
 
-    # Display counts of gender
+    # Display count of genders
     if df.columns.isin(['Gender']).any():
         user_gender = df['Gender'].value_counts()
         print(user_gender)
@@ -222,7 +222,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        # Display raw data
+        # Display 5 rows of raw data if user desires
         # Set counter to zero
         x = 0
         # Set view_raw_data to something other than 'No'
