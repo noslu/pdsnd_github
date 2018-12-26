@@ -14,14 +14,15 @@ This program (bikeshare.py) uses three data files - one for each city.
 ### Credits
 
 #### Scrubbing data
- - Get month name from number - https://stackoverflow.com/questions/6557553/get-month-name-from-number/6557568
+ - [Get month name from number](https://stackoverflow.com/questions/6557553/get-month-name-from-number/6557568)
 
- - datetime - https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html
+ - [datetime](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.to_datetime.html)
 
-working on my while loops - https://wiki.python.org/moin/WhileLoop
-                            http://introtopython.org/while_input.html
-and how break works - https://www.programiz.com/python-programming/break-continue
-and generally the api reference - https://pandas.pydata.org/pandas-docs/stable/api.html#datetimelike-properties
 
-refining my user input code - https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response
-and how to exit the program - https://stackoverflow.com/questions/949504/terminating-a-python-program
+ - [while loops](https://wiki.python.org/moin/WhileLoop)
+ - [More while loop resources](http://introtopython.org/while_input.html)
+ - [break statement](https://www.programiz.com/python-programming/break-continue)
+ - [Generally the api reference](https://pandas.pydata.org/pandas-docs/stable/api.html#datetimelike-properties)
+
+[Refining my user input code] https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response
+[Exiting the program] https://stackoverflow.com/questions/949504/terminating-a-python-program
